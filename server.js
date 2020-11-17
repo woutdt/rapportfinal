@@ -34,7 +34,7 @@ app.use(cors({
 const saltRounds = 12;
 
 
-mongoose.connect('mongodb+srv://woutdt:Wout2002@cluster0-ivi2k.mongodb.net/test?retryWrites=true', function(err) { 
+mongoose.connect('mongodb+srv://woutdt01:Wout2002@rapport.ignpq.mongodb.net/<dbname>?retryWrites=true&w=majority', function(err) { 
   if(err) {
     console.log(err);
   } else {
