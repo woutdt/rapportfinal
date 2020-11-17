@@ -75,10 +75,10 @@ app.post("/api/newUser", function(req, res) {
   });
 });
 
-app.use(express.static(process.cwd()+"/build/client/dist/client/"));
+app.use(express.static(process.cwd()+"/client/dist/client/"));
 
 app.get("/", function(req, res) {
-  res.sendFile(process.cwd()+"/build/client/dist/client/index.html")
+  res.sendFile(process.cwd()+"/client/dist/client/index.html")
 });
 
 app.get("/api/authenticate", function(req, res){
